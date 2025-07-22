@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> registro u ingreso </title>
+    <link rel="stylesheet" href="CSSREGITRATE.css">
+    <form action="registro.php" method="post"></form>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h2>inscribirse</h2>
+                <div class="input-group">
+                    <input type="text" name="nombre" required>
+                    <label for="">nombre de usuario</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="correo" required>
+                    <label for="">correo</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="contraseña" required>
+                    <label for="">contraseña</label>
+                </div>
+                <button type="submit" class="btn" value="registrar" name="registro">inscribirse</button>
+                <div class="sign-link">
+                    <p>¿ya tienes una cuenta? <a href="#" class="signIn-link">iniciar seccion</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-wrapper sign-in">
+            <form action="">
+                <h2>acceso</h2>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for="">nombre de usuario</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label for="">contraseña</label>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">¿has olvidado tu contraseña?</a>
+                </div>
+                <button type="submit" class="btn">acceso</button>
+                <div class="sign-link">
+                    <p>¿no tienes una cuenta? <a href="#" class="signUp-link">inscribirse</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="registro.js"></script>
+</body>
+
+</html>
